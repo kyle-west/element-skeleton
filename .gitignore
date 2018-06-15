@@ -1,0 +1,12 @@
+**/.DS_Store
+.vscode/*
+/bower_components
+/build
+/components
+/dist
+/reports
+/static
+node_modules
+npm-debug.log
+npm-debug.log
+Procfile.debug

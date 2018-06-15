@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="element-skeleton.css"/>
+    <style>
+      p {
+        font-size: 12pt;
+      }
+
+      .demo-set *::before {
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block Elements:</h1>
+    
+    <div class="demo-set">
+      <p element-skeleton></p>
+      <h1 element-skeleton></h1>
+      <h2 element-skeleton></h2>
+      <h3 element-skeleton></h3>
+      <h4 element-skeleton></h4>
+      <h5 element-skeleton></h5>
+      <h6 element-skeleton></h6>
+      <pre element-skeleton></pre>
+      <div element-skeleton></div>
+      <address element-skeleton></address>
+    </div>
+    <br><br><hr>
+    
+    <h1>Inline Elements</h1>
+    
+    <div class="demo-set">
+        <b element-skeleton></b>
+        <big element-skeleton></big>
+        <i element-skeleton></i>
+        <small element-skeleton></small>
+        <tt element-skeleton></tt>
+        <abbr element-skeleton></abbr>
+        <acronym element-skeleton></acronym>
+        <cite element-skeleton></cite>
+        <code element-skeleton></code>
+        <dfn element-skeleton></dfn>
+        <em element-skeleton></em>
+        <kbd element-skeleton></kbd>
+        <strong element-skeleton></strong>
+        <samp element-skeleton></samp>
+        <var element-skeleton></var>
+        <a element-skeleton></a>
+        <bdo element-skeleton></bdo>
+        <map element-skeleton></map>
+        <q element-skeleton></q>
+        <span element-skeleton></span>
+        <sub element-skeleton></sub>
+        <sup element-skeleton></sup>
+        <label element-skeleton></label>
+    </div>
+    
+  </body>
+  <script>
+    setTimeout(() => {
+      let message = "Text dynamically added post the element being added to page";
+      [...document.querySelectorAll('.load-demo')].forEach(elem => {
+        elem.innerHTML = message;
+      });
+    }, 3000);
+
+    var __demo_elem_counter = 0;
+    [...document.querySelectorAll('.demo-set *')].forEach(elem => {
+      elem.id = `demo-set_element_${__demo_elem_counter}`;
+      let before = `<style>#${elem.id}:before{content:"${elem.tagName}"}</style>`;
+      document.head.innerHTML += before;
+      __demo_elem_counter++;
+    });
+  </script>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "element-skeleton",
+  "version": "0.1.0",
+  "description": "Like a loading spinner, but visually more satisfying and dynamic",
+  "author": {
+    "name": "Kyle West",
+    "url": "https://github.com/kyle-west"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyle-west/element-skeleton.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "precommit": "build.sh"
+  }
+}
