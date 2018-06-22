@@ -28,35 +28,44 @@
     </div>
     <br><br><hr>
     
-    <h1>Inline Elements</h1>
+    <h1>Inline Elements:</h1>
     
     <div class="demo-set">
-        <b element-skeleton></b>
-        <big element-skeleton></big>
-        <i element-skeleton></i>
-        <small element-skeleton></small>
-        <tt element-skeleton></tt>
-        <abbr element-skeleton></abbr>
-        <acronym element-skeleton></acronym>
-        <cite element-skeleton></cite>
-        <code element-skeleton></code>
-        <dfn element-skeleton></dfn>
-        <em element-skeleton></em>
-        <kbd element-skeleton></kbd>
-        <strong element-skeleton></strong>
-        <samp element-skeleton></samp>
-        <var element-skeleton></var>
-        <a element-skeleton></a>
-        <bdo element-skeleton></bdo>
-        <map element-skeleton></map>
-        <q element-skeleton></q>
-        <span element-skeleton></span>
-        <sub element-skeleton></sub>
-        <sup element-skeleton></sup>
-        <label element-skeleton></label>
+      <b element-skeleton></b>
+      <big element-skeleton></big>
+      <i element-skeleton></i>
+      <small element-skeleton></small>
+      <tt element-skeleton></tt>
+      <abbr element-skeleton></abbr>
+      <acronym element-skeleton></acronym>
+      <cite element-skeleton></cite>
+      <code element-skeleton></code>
+      <dfn element-skeleton></dfn>
+      <em element-skeleton></em>
+      <kbd element-skeleton></kbd>
+      <strong element-skeleton></strong>
+      <samp element-skeleton></samp>
+      <var element-skeleton></var>
+      <a element-skeleton></a>
+      <bdo element-skeleton></bdo>
+      <map element-skeleton></map>
+      <q element-skeleton></q>
+      <span element-skeleton></span>
+      <sub element-skeleton></sub>
+      <sup element-skeleton></sup>
+      <label element-skeleton></label>
     </div>
     
-  </body>
+    <h1>Changed Color:</h1>
+    <style>
+      *[element-skeleton]:empty.red {
+        background: linear-gradient(90deg, red, white);
+        background-size: 300% 300%;
+      }
+    </style>
+    <h3 element-skeleton class="red"></h3>
+      
+    </body>
   <script>
     var __demo_elem_counter = 0;
     [...document.querySelectorAll('.demo-set *')].forEach(elem => {
