@@ -1,6 +1,7 @@
 {
   "bowerFiles": [
     "element-skeleton.css",
+    "element-skeleton.min.css",
     "element-skeleton.html"
   ],
   "clientManifestFiles": []

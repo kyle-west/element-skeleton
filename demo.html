@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="element-skeleton.css"/>
+    <link rel="stylesheet" href="element-skeleton.min.css"/>
     <style>
       p {
         font-size: 12pt;
@@ -58,13 +58,6 @@
     
   </body>
   <script>
-    setTimeout(() => {
-      let message = "Text dynamically added post the element being added to page";
-      [...document.querySelectorAll('.load-demo')].forEach(elem => {
-        elem.innerHTML = message;
-      });
-    }, 3000);
-
     var __demo_elem_counter = 0;
     [...document.querySelectorAll('.demo-set *')].forEach(elem => {
       elem.id = `demo-set_element_${__demo_elem_counter}`;
